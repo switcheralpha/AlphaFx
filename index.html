@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/binary_logo.svg" />
+        <link rel="manifest" href="/manifest.json" />
+        <script>
+            (function () {
+                // Mirror of domain.ts — kept in sync manually.
+                var SITE_CONFIGS = {
+                    'alphafx.com': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'AlphaFx',
+                        displayDomain: 'alphafx.com',
+                        tagline: 'Advanced trading solutions and automated tools',
+                        faviconText: 'AF',
+                    },
+                    'piplytrades.com': {
+                        primaryColor: '#9333EA',
+                        secondaryColor: '#170B2E',
+                        displayName: 'PiplyTrades',
+                        displayDomain: 'piplytrades.com',
+                        tagline: 'Deriv bots and trading tools for focused execution',
+                        faviconText: 'PT',
+                    },
+                    'traderscheme.com': {
+                        primaryColor: '#001840',
+                        secondaryColor: '#010d21',
+                        displayName: 'TraderScheme',
+                        displayDomain: 'www.traderscheme.com',
+                        tagline: 'Structured trading, built for focus',
+                        faviconText: 'TS',
+                    },
+                    'kenyanprince.site': {
+                        primaryColor: '#102A71',
+                        secondaryColor: '#001840',
+                        displayName: 'KenyanPrince',
+                        displayDomain: 'kenyanprince.site',
+                        tagline: 'Free Deriv bots and professional trading tools',
+                        faviconText: 'KP',
+                    },
+                    'mkoreanwwn.com': {
+                        primaryColor: '#1a0000',
+                        secondaryColor: '#8B0000',
+                        displayName: 'MkoreanWWN',
+                        displayDomain: 'mkoreanwwn.com',
+                        tagline: 'Your gateway to Deriv bot trading',
+                        faviconText: 'TH',
+                    },
+                    'profitminer.site': {
+                        primaryColor: '#1a0000',
+                        secondaryColor: '#8B0000',
+                        displayName: 'Profit Miner',
+                        displayDomain: 'profitminer.site',
+                        tagline: 'Your gateway to Deriv bot trading',
+                        faviconText: 'PM',
+                    },
+                    'digittools.pro': {
+                        primaryColor: '#051650',
+                        secondaryColor: '#00072D',
+                        displayName: 'DigitTools',
+                        displayDomain: 'digittools.pro',
+                        tagline: 'Advanced digit trading tools',
+                        faviconText: 'DT',
+                    },
+                    'tradepro.wiki': {
+                        primaryColor: '#45FF24',
+                        secondaryColor: '#050505',
+                        displayName: 'TradePro Wiki',
+                        displayDomain: 'tradepro.wiki',
+                        tagline: 'Advanced digit trading tools and strategies',
+                        faviconText: 'TP',
+                    },
+                    'apextrades.pro': {
+                        primaryColor: '#65C91A',
+                        secondaryColor: '#020508',
+                        displayName: 'ApexTrades',
+                        displayDomain: 'apextrades.pro',
+                        tagline: 'Plan, manage risk, trade patiently, and pursue profit',
+                        faviconText: 'AT',
+                    },
+                    'traders-block.com': {
+                        primaryColor: '#D4AF37',
+                        secondaryColor: '#1A1200',
+                        displayName: 'Traders Block',
+                        displayDomain: 'traders-block.com',
+                        tagline: 'Own every digit. Trade with precision.',
+                        faviconText: 'TB',
+                    },
+                    'profitscape.pro': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'ProfitScape',
+                        displayDomain: 'profitscape.pro',
+                        tagline: 'Deriv trading tools for smarter bot execution',
+                        faviconText: 'PS',
+                    },
+                    'tradersunit.com': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'TradersUnit',
+                        displayDomain: 'tradersunit.com',
+                        tagline: 'Deriv trading workspace for disciplined execution',
+                        faviconText: 'TU',
+                    },
+                    'tradersiq.site': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'TradersIQ',
+                        displayDomain: 'tradersiq.site',
+                        tagline: 'Deriv trading workspace for disciplined execution',
+                        faviconText: 'TI',
+                    },
+                    'tradersscape.pro': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'TradersScape',
+                        displayDomain: 'tradersscape.pro',
+                        tagline: 'Deriv trading workspace for disciplined execution',
+                        faviconText: 'TS',
+                    },
+                    'wintrades.pro': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'Wintrades',
+                        displayDomain: 'wintrades.pro',
+                        tagline: 'Deriv trading workspace for disciplined execution',
+                        faviconText: 'WI',
+                    },
+                    'marketguides.site': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'MarketGuides',
+                        displayDomain: 'marketguides.site',
+                        tagline: 'Deriv market guidance, bots, and trading tools',
+                        faviconText: 'MG',
+                    },
+                    'mrduke.site': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'MrDuke',
+                        displayDomain: 'mrduke.site',
+                        tagline: 'Deriv bots and trading tools for focused execution',
+                        faviconText: 'MD',
+                    },
+                    'dbot.githinji.site': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'Githinji',
+                        displayDomain: 'dbot.githinji.site',
+                        tagline: 'Free Deriv bots and trading tools for all traders',
+                        faviconText: 'DB',
+                    },
+                    'paigeytraders.com': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'PaigeyTraders',
+                        displayDomain: 'paigeytraders.com',
+                        tagline: 'Deriv trading tools for focused execution',
+                        faviconText: 'PT',
+                    },
+                    'isaacmrdollars.site': {
+                        primaryColor: '#062E78',
+                        secondaryColor: '#020B24',
+                        displayName: 'IsaacMrDollars',
+                        displayDomain: 'IsaacMrdollars.site',
+                        tagline: 'Deriv trading tools for focused execution',
+                        faviconText: 'IM',
+                    },
+                    'sunnyscheme.pro': {
+                        primaryColor: '#E5B80B',
+                        secondaryColor: '#0A0A0A',
+                        displayName: 'SunnyScheme',
+                        displayDomain: 'www.sunnyscheme.pro',
+                        tagline: 'Deriv trading tools for focused execution',
+                        faviconText: 'SS',
+                    }
+                };
+                
+                // Fallback mechanism for site configs
+                var host = window.location.hostname;
+                var currentConfig = SITE_CONFIGS[host] || SITE_CONFIGS['alphafx.com'];
+                
+                window.__SITE_CONFIG__ = currentConfig;
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <!-- If your download included script tags below, keep them here -->
+    </body>
+</html>
