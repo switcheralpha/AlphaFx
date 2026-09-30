@@ -178,12 +178,15 @@
                     }
                 };
                 
-                // Fallback mechanism for site configs
+                                // Fallback mechanism for site configs
                 var host = window.location.hostname;
                 var currentConfig = SITE_CONFIGS[host] || SITE_CONFIGS['alphafx.com'];
                 
+                // Inject your Deriv App ID and OAuth login link
+                currentConfig.appId = '34y0WPuFgArsLilUu9DfJ';
+                currentConfig.oauthUrl = 'https://deriv.com' + currentConfig.appId;
+
                 window.__SITE_CONFIG__ = currentConfig;
-            })();
         </script>
     </head>
     <body>
